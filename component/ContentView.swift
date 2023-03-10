@@ -23,8 +23,14 @@ struct ContentView: View {
                     label: {
                         Text("Pathway Detail Curriculum")
                     })
+                
+                NavigationLink(
+                    destination: desMyDashboardSwiftUI,
+                    label: {
+                        Text("My Dashboard")
+                    })
             }
-            .navigationTitle("List Example")
+            .navigationTitle("List SwiftUI Component")
             
         }
     }
@@ -39,6 +45,9 @@ struct ContentView: View {
             .environmentObject(PathwayViewModel())
     }
     
+    var desMyDashboardSwiftUI: some View {
+        MyDashboardSwiftUI()
+    }
 }
 
 
