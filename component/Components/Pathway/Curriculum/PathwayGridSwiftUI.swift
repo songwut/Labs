@@ -39,11 +39,43 @@ struct PathwayGridSwiftUI: View {
         }
     }
     
+    var titleView: some View {
+        Text(viewModel.learningPath.name)
+            .font(.font(20, .medium))
+            .foregroundColor(LPTheme.shared.textColor.color)
+    }
+    
+    var dateView: some View {
+        VStack {
+            HStack(spacing: 8) {
+                Image(uiImage: UIImage(named: "ic_calendar") ?? UIImage())
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 24, height: 24)
+                    .foregroundColor(.neutral(.cool))
+                
+                Text(viewModel.learningPath.getDateText())
+                    .foregroundColor(.neutral(.cool))
+                    .font(.font(16, .regular))
+                Spacer()
+            }
+        }
+    }
+    
     var scrollGridView: some View {
         GeometryReader { geometry in
             ScrollView {
                 
                 headView
+                
+                VStack(alignment: .leading, spacing: 2) {
+                    titleView
+                    dateView
+                    vbPathwayHeaderViewRep()
+                        .frame(height: viewModel.topViewHeight)
+                        .padding([.top, .bottom], 24)
+                }
+                .padding([.leading, .trailing], PathwayStyle.PADDING)
                 
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(viewModel.pathwaySectionList, id: \SectionSLPResult.uuid) { section in
@@ -71,6 +103,21 @@ struct PathwayGridSwiftUI: View {
                     }
                 }.padding([.leading, .trailing], PathwayStyle.PADDING)
             }
+        }
+    }
+    
+    @ViewBuilder private func vbPathwayHeaderViewRep() -> some View {
+        GeometryReader { geometry in
+            let frame = CGRect(x: 0, y: 0, width: geometry.size.width, height: viewModel.topViewHeight)
+            
+            VStack(spacing: 0, content: {
+                
+                PathwayHeaderViewRep(frame: frame, viewModel: viewModel)
+                    .frame(height: viewModel.topViewHeight)
+                //PathViewControllerRep(pathwayVM: viewModel)
+                
+            })
+            .background(Color.clear)
         }
     }
 }

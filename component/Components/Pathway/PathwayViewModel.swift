@@ -10,6 +10,7 @@ import SwiftUI
 
 class PathwayViewModel: ObservableObject {
     @Published var selection: Int = 0
+    @Published var topViewHeight: CGFloat = 136
     
     var menus: [PathwayMenu] = PathwayMock.menus
     var pathwaySectionList : [SectionSLPResult] = PathwayMock.pathwaySectionList

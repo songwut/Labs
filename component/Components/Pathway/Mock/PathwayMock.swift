@@ -17,7 +17,9 @@ struct PathwayStyle {
 
 struct PathwayMock {
     static var learnObject: LearnObjectResult = LearnObjectResult(JSON: [:])!
-    static let section: SectionSLPResult = SectionSLPResult(JSON: [:])!
+    static let section: SectionSLPResult = {
+        pathwaySectionList.first!
+    }()
     
     static let mockSection1: [LearnObjectResult] = [
         LearnObjectResult(JSON: ["name" : "obj1"])!,

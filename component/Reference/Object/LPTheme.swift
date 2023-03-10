@@ -31,7 +31,7 @@ class LPTheme: NSObject {
     var subColor = UIColor(hex: "122847")
     var pathColor = CoColor.whiteColor
     var passPathColor = UIColor(hex: "FF8400")
-    var textColor = CoColor.whiteColor
+    var textColor = UIColor(hex: "000000")
     var subTextColor = UIColor(hex: "B5B7B9")
     var sectionColor = UIColor(hex: "F85459")
     var menuBackgroundColor = UIColor(hex: "#081224")

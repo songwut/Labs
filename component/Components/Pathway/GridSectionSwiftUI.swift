@@ -18,9 +18,8 @@ struct GridSectionSwiftUI: View {
                 .foregroundColor(.white)
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color.gray, lineWidth: 1)
+                        .stroke(Color.neutral(.cool, .shade300), lineWidth: 1)
                 )
-            
             
             ZStack {
                 contentView
@@ -37,9 +36,9 @@ struct GridSectionSwiftUI: View {
         HStack(alignment: .center, spacing: 8) {
             ZStack {
                 Circle()
-                    .fill(mainColor)
+                    .fill(Color.neutral(.cool, .shade100))
                 Text("\(section.num)")
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .font(.font(20, .medium))
             }
             .frame(width: 34, height: 34, alignment: .leading)
@@ -51,7 +50,7 @@ struct GridSectionSwiftUI: View {
                     .font(.font(10, .medium))
                 
                 Text(section.getDateText())
-                    .foregroundColor(.gray)
+                    .foregroundColor(.neutral(.cool))
                     .font(.font(10, .regular))
             }
             
@@ -62,7 +61,7 @@ struct GridSectionSwiftUI: View {
             } label: {
                 Image("ic_info_outline")
                     .frame(width: 24, height: 24)
-                    .foregroundColor(mainColor)
+                    .foregroundColor(.neutral(.cool))
             }
             .frame(width: 24, height: 24, alignment: .trailing)
         }

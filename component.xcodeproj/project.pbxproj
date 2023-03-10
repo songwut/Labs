@@ -63,6 +63,8 @@
 		A76E844F29BA0ED200F4DED1 /* home_playlist.json in Resources */ = {isa = PBXBuildFile; fileRef = A76E844E29BA0ED200F4DED1 /* home_playlist.json */; };
 		A76E845129BA184B00F4DED1 /* GridSectionSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E845029BA184B00F4DED1 /* GridSectionSwiftUI.swift */; };
 		A76E845329BA1BDF00F4DED1 /* pathway_section_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A76E845229BA1BDF00F4DED1 /* pathway_section_list.json */; };
+		A771CA4829BB9AF9002A139E /* PathwayHeaderSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771CA4729BB9AF9002A139E /* PathwayHeaderSwiftUI.swift */; };
+		A771CA4C29BBB18A002A139E /* PathwayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771CA4B29BBB18A002A139E /* PathwayHeaderView.swift */; };
 		A77588C7298E85CB00C5C314 /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77588C6298E85CB00C5C314 /* PaperView.swift */; };
 		A77588C9298E8A8900C5C314 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77588C8298E8A8900C5C314 /* TriangleView.swift */; };
 		A77588CB298E917900C5C314 /* Pyramid3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77588CA298E917900C5C314 /* Pyramid3D.swift */; };
@@ -178,6 +180,8 @@
 		A76E844E29BA0ED200F4DED1 /* home_playlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home_playlist.json; sourceTree = "<group>"; };
 		A76E845029BA184B00F4DED1 /* GridSectionSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridSectionSwiftUI.swift; sourceTree = "<group>"; };
 		A76E845229BA1BDF00F4DED1 /* pathway_section_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pathway_section_list.json; sourceTree = "<group>"; };
+		A771CA4729BB9AF9002A139E /* PathwayHeaderSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathwayHeaderSwiftUI.swift; sourceTree = "<group>"; };
+		A771CA4B29BBB18A002A139E /* PathwayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathwayHeaderView.swift; sourceTree = "<group>"; };
 		A77588C6298E85CB00C5C314 /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
 		A77588C8298E8A8900C5C314 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		A77588CA298E917900C5C314 /* Pyramid3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pyramid3D.swift; sourceTree = "<group>"; };
@@ -300,7 +304,9 @@
 				A76C86AF29A642C8004E9A7E /* PathwayCurriculumSwiftUI.swift */,
 				A76C867F29A5E9E1004E9A7E /* PathwayPanelSwiftUI.swift */,
 				A75C702129A8895600A91534 /* PathwayPathSwiftUI.swift */,
+				A771CA4729BB9AF9002A139E /* PathwayHeaderSwiftUI.swift */,
 				A75C702329A889B800A91534 /* PathwayGridSwiftUI.swift */,
+				A771CA4B29BBB18A002A139E /* PathwayHeaderView.swift */,
 				A76E844629BA066300F4DED1 /* AllFeedItemV5SwiftUI.swift */,
 				A76E844A29BA06D900F4DED1 /* AllFeedItemV5CollectionViewCell.xib */,
 				A76E844829BA06B100F4DED1 /* AllFeedItemV5CollectionViewCell.swift */,
@@ -647,6 +653,7 @@
 				A7D2B4692979349B00843B84 /* Persistence.swift in Sources */,
 				A76E844529B9D1BF00F4DED1 /* CategoryResult.swift in Sources */,
 				A76E843F29B9BF5A00F4DED1 /* FilterObj.swift in Sources */,
+				A771CA4829BB9AF9002A139E /* PathwayHeaderSwiftUI.swift in Sources */,
 				A7D2B4A62979351100843B84 /* ImagePickerView.swift in Sources */,
 				A76E844729BA066300F4DED1 /* AllFeedItemV5SwiftUI.swift in Sources */,
 				A76C868829A606BF004E9A7E /* FontHelper.swift in Sources */,
@@ -666,6 +673,7 @@
 				A76E843329B999BC00F4DED1 /* ContentResult.swift in Sources */,
 				A76C868429A5F492004E9A7E /* PanelRowViewSwiftUI.swift in Sources */,
 				A7D2B4A82979351100843B84 /* ImageView.swift in Sources */,
+				A771CA4C29BBB18A002A139E /* PathwayHeaderView.swift in Sources */,
 				A73ED97E299F56390037212B /* MyDashboardSwiftUI.swift in Sources */,
 				A7E1EC4029B89F370005067E /* PathwayItemSwiftUI.swift in Sources */,
 				A76E844129B9BF7F00F4DED1 /* SearchPageResult.swift in Sources */,
