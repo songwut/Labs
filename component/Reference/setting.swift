@@ -13,7 +13,7 @@ let fontConicleBold = "DBHeaventRounded-Bold"
 let fontConicleTextIt = "DBHeaventRounded-Italic"
 let fontConicleMediumIt = "DBHeaventRounded-MedIt"
 let fontConicleBoldIt = "DBHeaventRounded-BoldIt"
-
+let unlimitText = "unlimit"
 let LCLCurrentLanguageKey = "LCLCurrentLanguageKey"
 var mainCalendar = Calendar.current
 struct DeviceID {

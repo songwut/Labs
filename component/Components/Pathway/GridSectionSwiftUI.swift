@@ -15,8 +15,11 @@ struct GridSectionSwiftUI: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16)
-                .border(Color.gray, width: 1)
-                .fill(.white)
+                .foregroundColor(.white)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.gray, lineWidth: 1)
+                )
             
             
             ZStack {

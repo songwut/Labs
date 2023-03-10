@@ -26,7 +26,7 @@ class ContentResult: BaseResult {
     var datetimePublishCard  = ""
     var durationCard = 0
     var providerCard: ProviderResult?
-    //var contentPeriodDoingCard: ContentPeriodResult?
+    var contentPeriodDoingCard: ContentPeriodResult?
 
     //var categoryCard: CategoryResult?
     var transactionCard: TransactionResult?
@@ -53,8 +53,8 @@ class ContentResult: BaseResult {
     //var categoryContentType: ContentTypeResult?
     var contentSource = ""
     var contentLevel: BaseResult?
-    var price = 0.0
-    var discountPrice = 0.0
+    var price: Int?
+    var discountPrice: Int?
     var isPasscode = false
     var durationExpired = 0
     var datetimeExpired: String?

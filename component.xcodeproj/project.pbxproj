@@ -15,13 +15,14 @@
 		A73ED988299F5EAB0037212B /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73ED987299F5EAB0037212B /* extension.swift */; };
 		A73ED98A299F65490037212B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73ED989299F65490037212B /* CalendarView.swift */; };
 		A746BE5729B1EEE80053190D /* TeamMemberListSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A746BE5629B1EEE80053190D /* TeamMemberListSwiftUI.swift */; };
+		A7481D1A29BB183600A6B990 /* pathway_page.json in Resources */ = {isa = PBXBuildFile; fileRef = A7481D1929BB183600A6B990 /* pathway_page.json */; };
+		A7481D1C29BB189E00A6B990 /* LearningPathPageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7481D1B29BB189E00A6B990 /* LearningPathPageResult.swift */; };
 		A75C702229A8895600A91534 /* PathwayPathSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C702129A8895600A91534 /* PathwayPathSwiftUI.swift */; };
 		A75C702429A889B800A91534 /* PathwayGridSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C702329A889B800A91534 /* PathwayGridSwiftUI.swift */; };
 		A75C703429A8A10100A91534 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A75C703329A8A10100A91534 /* ObjectMapper */; };
 		A75C703829A8ADEB00A91534 /* JSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C703729A8ADEB00A91534 /* JSONFile.swift */; };
 		A75C703A29A8AE5F00A91534 /* pathway_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A75C703929A8AE5F00A91534 /* pathway_list.json */; };
 		A75C705729A8B97D00A91534 /* PathwayAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75C705629A8B97D00A91534 /* PathwayAssets.xcassets */; };
-		A75C705D29A8C55D00A91534 /* CurriculumUIHosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C705C29A8C55D00A91534 /* CurriculumUIHosting.swift */; };
 		A7693F7B29AC7CB4006AF544 /* LPTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693F7A29AC7CB4006AF544 /* LPTheme.swift */; };
 		A7693F7D29AC7CD9006AF544 /* LPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693F7C29AC7CD9006AF544 /* LPConfig.swift */; };
 		A7693F7F29AC7D5A006AF544 /* CoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693F7E29AC7D5A006AF544 /* CoColor.swift */; };
@@ -129,12 +130,13 @@
 		A73ED987299F5EAB0037212B /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		A73ED989299F65490037212B /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A746BE5629B1EEE80053190D /* TeamMemberListSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberListSwiftUI.swift; sourceTree = "<group>"; };
+		A7481D1929BB183600A6B990 /* pathway_page.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pathway_page.json; sourceTree = "<group>"; };
+		A7481D1B29BB189E00A6B990 /* LearningPathPageResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPathPageResult.swift; sourceTree = "<group>"; };
 		A75C702129A8895600A91534 /* PathwayPathSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathwayPathSwiftUI.swift; sourceTree = "<group>"; };
 		A75C702329A889B800A91534 /* PathwayGridSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathwayGridSwiftUI.swift; sourceTree = "<group>"; };
 		A75C703729A8ADEB00A91534 /* JSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFile.swift; sourceTree = "<group>"; };
 		A75C703929A8AE5F00A91534 /* pathway_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pathway_list.json; sourceTree = "<group>"; };
 		A75C705629A8B97D00A91534 /* PathwayAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PathwayAssets.xcassets; sourceTree = "<group>"; };
-		A75C705C29A8C55D00A91534 /* CurriculumUIHosting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumUIHosting.swift; sourceTree = "<group>"; };
 		A7693F7A29AC7CB4006AF544 /* LPTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPTheme.swift; sourceTree = "<group>"; };
 		A7693F7C29AC7CD9006AF544 /* LPConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPConfig.swift; sourceTree = "<group>"; };
 		A7693F7E29AC7D5A006AF544 /* CoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoColor.swift; sourceTree = "<group>"; };
@@ -246,9 +248,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7481D1629BB061200A6B990 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				A7A9490129A4CEDF0025D995 /* Object */,
+				A7D2B4AA2979355200843B84 /* ColorHelper.swift */,
+				A76C868729A606BF004E9A7E /* FontHelper.swift */,
+				A75C703729A8ADEB00A91534 /* JSONFile.swift */,
+				A76C868929A606F3004E9A7E /* setting.swift */,
+				A76E843629B9A60E00F4DED1 /* Localized.swift */,
+				A73ED987299F5EAB0037212B /* extension.swift */,
+				A76E843829B9A72300F4DED1 /* Date.swift */,
+				A7D2B4AC2979359600843B84 /* ConfigFactory.swift */,
+				A7D2B4AE297935D300843B84 /* UIColor+Sugar.swift */,
+				A76E843429B9A5C900F4DED1 /* Utility.swift */,
+				A7693F7E29AC7D5A006AF544 /* CoColor.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		A7481D1729BB076E00A6B990 /* MyDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A73ED97D299F56390037212B /* MyDashboardSwiftUI.swift */,
+				A73ED97F299F56920037212B /* ContinueLearningSwiftUI.swift */,
+				A746BE5629B1EEE80053190D /* TeamMemberListSwiftUI.swift */,
+				A73ED985299F5CFC0037212B /* LearnView.swift */,
+				A73ED989299F65490037212B /* CalendarView.swift */,
+				A73ED981299F57560037212B /* SuggestionSwiftUI.swift */,
+				A73ED983299F5AF60037212B /* SuggestionView.swift */,
+			);
+			path = MyDashboard;
+			sourceTree = "<group>";
+		};
+		A7481D1829BB07B000A6B990 /* TestUI */ = {
+			isa = PBXGroup;
+			children = (
+				A77588C6298E85CB00C5C314 /* PaperView.swift */,
+				A77588C8298E8A8900C5C314 /* TriangleView.swift */,
+				A77588CA298E917900C5C314 /* Pyramid3D.swift */,
+				A7D2FDF1297FA04A004F1949 /* LoginView.swift */,
+			);
+			path = TestUI;
+			sourceTree = "<group>";
+		};
 		A75C702029A8890E00A91534 /* Curriculum */ = {
 			isa = PBXGroup;
 			children = (
+				A76DBE2629AAAE970055CAAF /* DisclosureGroupNew.swift */,
 				A780221B29A94FF400EFF31A /* PathwayPathView.swift */,
 				A76C86AF29A642C8004E9A7E /* PathwayCurriculumSwiftUI.swift */,
 				A76C867F29A5E9E1004E9A7E /* PathwayPanelSwiftUI.swift */,
@@ -268,6 +315,7 @@
 				A780221529A9392A00EFF31A /* pathway_detail.json */,
 				A76E844E29BA0ED200F4DED1 /* home_playlist.json */,
 				A76E845229BA1BDF00F4DED1 /* pathway_section_list.json */,
+				A7481D1929BB183600A6B990 /* pathway_page.json */,
 				A75C703929A8AE5F00A91534 /* pathway_list.json */,
 			);
 			path = Mock;
@@ -276,8 +324,10 @@
 		A76C867E29A5E996004E9A7E /* Pathway */ = {
 			isa = PBXGroup;
 			children = (
+				A75C705629A8B97D00A91534 /* PathwayAssets.xcassets */,
 				A75C703B29A8B00300A91534 /* Mock */,
 				A75C702029A8890E00A91534 /* Curriculum */,
+				A7E1EC3E29B89F130005067E /* list */,
 				A76C86AD29A618E2004E9A7E /* PathwayViewModel.swift */,
 				A76C86A729A60C46004E9A7E /* PathwayMenuSwiftUI.swift */,
 				A76C86AB29A61443004E9A7E /* SegmentButtonSwiftUI.swift */,
@@ -285,6 +335,8 @@
 				A76C868129A5F04F004E9A7E /* PanelSectionSwiftUI.swift */,
 				A76C868329A5F492004E9A7E /* PanelRowViewSwiftUI.swift */,
 				A76C868529A5F583004E9A7E /* CircleProgressSwiftUI.swift */,
+				A787C06329A4B6D800A7DF2D /* CircularProgressBar.swift */,
+				A7D2B48F297934DD00843B84 /* LockPopupSwiftUI.swift */,
 			);
 			path = Pathway;
 			sourceTree = "<group>";
@@ -308,6 +360,7 @@
 			children = (
 				A7A9490229A4CEF10025D995 /* object.swift */,
 				A76E844429B9D1BF00F4DED1 /* CategoryResult.swift */,
+				A7481D1B29BB189E00A6B990 /* LearningPathPageResult.swift */,
 				A7E1EC2C29B88F440005067E /* ProgressResult.swift */,
 				A76E843229B999BC00F4DED1 /* ContentResult.swift */,
 				A76E843A29B9BEB200F4DED1 /* ContentType.swift */,
@@ -348,18 +401,7 @@
 				A76C868B29A60815004E9A7E /* Info.plist */,
 				A7D2B45F2979349900843B84 /* componentApp.swift */,
 				A7D2B4612979349900843B84 /* ContentView.swift */,
-				A7D2B4AA2979355200843B84 /* ColorHelper.swift */,
-				A76C868729A606BF004E9A7E /* FontHelper.swift */,
-				A75C703729A8ADEB00A91534 /* JSONFile.swift */,
-				A76C868929A606F3004E9A7E /* setting.swift */,
-				A76E843629B9A60E00F4DED1 /* Localized.swift */,
-				A73ED987299F5EAB0037212B /* extension.swift */,
-				A76E843829B9A72300F4DED1 /* Date.swift */,
-				A7D2B4AC2979359600843B84 /* ConfigFactory.swift */,
-				A7D2B4AE297935D300843B84 /* UIColor+Sugar.swift */,
-				A76E843429B9A5C900F4DED1 /* Utility.swift */,
-				A7693F7E29AC7D5A006AF544 /* CoColor.swift */,
-				A7A9490129A4CEDF0025D995 /* Object */,
+				A7481D1629BB061200A6B990 /* Reference */,
 				A7D2B4912979351100843B84 /* SwiftUIUtility */,
 				A7D2B48E297934DD00843B84 /* Components */,
 				A76C868C29A6086D004E9A7E /* Fonts */,
@@ -400,23 +442,8 @@
 			isa = PBXGroup;
 			children = (
 				A76C867E29A5E996004E9A7E /* Pathway */,
-				A7D2B48F297934DD00843B84 /* LockPopupSwiftUI.swift */,
-				A7E1EC3E29B89F130005067E /* list */,
-				A73ED97D299F56390037212B /* MyDashboardSwiftUI.swift */,
-				A75C705C29A8C55D00A91534 /* CurriculumUIHosting.swift */,
-				A75C705629A8B97D00A91534 /* PathwayAssets.xcassets */,
-				A73ED97F299F56920037212B /* ContinueLearningSwiftUI.swift */,
-				A787C06329A4B6D800A7DF2D /* CircularProgressBar.swift */,
-				A746BE5629B1EEE80053190D /* TeamMemberListSwiftUI.swift */,
-				A73ED985299F5CFC0037212B /* LearnView.swift */,
-				A73ED989299F65490037212B /* CalendarView.swift */,
-				A76DBE2629AAAE970055CAAF /* DisclosureGroupNew.swift */,
-				A73ED981299F57560037212B /* SuggestionSwiftUI.swift */,
-				A73ED983299F5AF60037212B /* SuggestionView.swift */,
-				A77588C6298E85CB00C5C314 /* PaperView.swift */,
-				A77588C8298E8A8900C5C314 /* TriangleView.swift */,
-				A77588CA298E917900C5C314 /* Pyramid3D.swift */,
-				A7D2FDF1297FA04A004F1949 /* LoginView.swift */,
+				A7481D1729BB076E00A6B990 /* MyDashboard */,
+				A7481D1829BB07B000A6B990 /* TestUI */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -568,6 +595,7 @@
 				A76C86A229A6086D004E9A7E /* db_heaventrounded.ttf in Resources */,
 				A7D2B4672979349B00843B84 /* Preview Assets.xcassets in Resources */,
 				A76C869D29A6086D004E9A7E /* db_heaventrounded_bd.ttf in Resources */,
+				A7481D1A29BB183600A6B990 /* pathway_page.json in Resources */,
 				A76E844B29BA06D900F4DED1 /* AllFeedItemV5CollectionViewCell.xib in Resources */,
 				A76E844F29BA0ED200F4DED1 /* home_playlist.json in Resources */,
 				A76C86A029A6086D004E9A7E /* db_heaventrounded_bd_it.ttf in Resources */,
@@ -623,6 +651,7 @@
 				A76E844729BA066300F4DED1 /* AllFeedItemV5SwiftUI.swift in Sources */,
 				A76C868829A606BF004E9A7E /* FontHelper.swift in Sources */,
 				A76C868229A5F04F004E9A7E /* PanelSectionSwiftUI.swift in Sources */,
+				A7481D1C29BB189E00A6B990 /* LearningPathPageResult.swift in Sources */,
 				A7D2B4A42979351100843B84 /* ActivityIndicator.swift in Sources */,
 				A7D2B4A52979351100843B84 /* CustomButtonUI.swift in Sources */,
 				A76E843929B9A72300F4DED1 /* Date.swift in Sources */,
@@ -640,7 +669,6 @@
 				A73ED97E299F56390037212B /* MyDashboardSwiftUI.swift in Sources */,
 				A7E1EC4029B89F370005067E /* PathwayItemSwiftUI.swift in Sources */,
 				A76E844129B9BF7F00F4DED1 /* SearchPageResult.swift in Sources */,
-				A75C705D29A8C55D00A91534 /* CurriculumUIHosting.swift in Sources */,
 				A76E843529B9A5C900F4DED1 /* Utility.swift in Sources */,
 				A76C868029A5E9E1004E9A7E /* PathwayPanelSwiftUI.swift in Sources */,
 				A76C86AA29A61211004E9A7E /* PathwayMock.swift in Sources */,

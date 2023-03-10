@@ -63,17 +63,102 @@ enum PathStyle:String {
     }
 }
 
-class LearnObjectResult: PointObject {
-    
+class LearnObjectResult: PointObject { // MaterialResult Course, Class, Test .....
+    var slotId: Int?
+    var subType: ContentCode = ContentCode.none
     var hasPermission = false
     var section: SectionSLPResult?
     var sectionId = 0 // get section id when getLearningList() call
     var sectionStart = ""
     var code = ""
-    var percentRatio:Float = 0
+    var type: ContentCode = ContentCode.none
     var progressDict = [String: Any]()
-    
+    var isRequirePermission = false
+    var isDependency = false
+    //var permissions = [PermissionObj]()
+    //var dependencies: [MaterialContentResult]?
+    var content: MaterialContentResult?
+    var batch: String?
+    var datetimeEnd = "" // 2017-10-30T08:00:00+07:00"
+    var datetimeStart = "" // 2018-01-31T06:00:00+07:00"
+    var eventProgram: MaterialContentResult?
+    var contentTypeCode = ContentCode.none
+    var typeVideo: TypeVideo = .video
+    var progressSnap: ProgressResult?
+    var progressCard: ProgressResult?
     var datetimeExpire: String?
+    var durationExpire = 0
+    var price: Int?
+    var discountPrice: Int?
+    
+    
+    var isLock: Bool {
+        if isDependency || self.hasPermission == false {
+            return true
+        }
+        return false
+    }
+    
+    func dayLeft() -> String? {
+        guard let expireString = datetimeExpire else { return nil }
+        if let dateExpire = formatter.dateWith(dateString: expireString) {
+            return dateExpire.days(from: Date()).textDays + " \("left".localized())"
+        }
+        return nil
+    }
+
+    func subText() -> String? {
+        if let expireString = datetimeExpire {
+            return "expired_on".localized() + " " + formatter.with(dateFormat: "d MMM yyyy",dateString: expireString)
+        }
+        return nil
+    }
+    /*
+    func manageDependency() {
+        if let d = dependencies {
+            let list = d.filter({ m -> Bool in
+                m.progress?.status == .completed
+            })
+            isDependency = !(list.count == d.count)
+        } else {
+            isDependency = false
+        }
+    }
+
+    func contentColor() -> UIColor? {
+        if type == .eventProgram {
+            if let _ = selectedEvent {
+                return type.getColor()
+            } else {
+                return CoColor.grayColor
+            }
+        } else {
+            return type.getColor()
+        }
+    }
+*/
+    func icon() -> UIImage? {
+        return type.icon()
+    }
+    
+    lazy var percentRatio: Float = {
+        if let progress = self.progress {
+            return progress.percent / 100
+        }
+        return 0.0
+    }()
+
+    lazy var percentText: String = {
+        if let progress = self.progress {
+            return "\(progress.percent.roundInt)%"
+        } else {
+            return "0%"
+        }
+    }()
+
+    lazy var typeText: String? = {
+        self.type.rawValue.localized()
+    }()
 
     lazy var statusColor: UIColor = {
         self.progress?.status.statusColor() ?? .gray
@@ -82,20 +167,132 @@ class LearnObjectResult: PointObject {
     lazy var progress: ProgressResult? = {
         ProgressResult(JSON: self.progressDict)
     }()
+
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        price                   <- map["price"]
+        discountPrice           <- map["discount_price"]
+        durationExpire <- map["content.duration_expire"]
+        datetimeExpire <- map["content.datetime_expire"]
+        eventProgram <- map["content.event_program"]
+        //eventList <- map["content.event_list"]
+        batch <- map["batch"]
+        content <- map["content"]
+        slotId <- map["id"]
+        id <- map["content.id"]
+        code <- map["content.code"]
+        image <- map["content.image"]
+        progressDict <- map["progress"]
+        progressCard <- map["progress"]
+        progressSnap <- map["progress_snap"]
+        type <- map["content.content_type.code"]
+        //dependencies <- map["dependency_list"]
+        //permissions <- map["permission_list"]
+        hasPermission <- map["content.has_permission"]
+        subType <- map["content.content_type.code_sub"]
+        datetimeEnd <- map["datetime_end"]
+        datetimeStart <- map["datetime_start"]
+        contentTypeCode <- map["content_type.code"]
+        contentTypeCode <- map["content_type"]
+        typeVideo <- map["content.type"]
+        isRequired <- map["is_required"]
+        //manageDependency()
+    }
+}
+
+class MaterialContentResult: BaseResult {
+    var provider: ProviderResult?
+    //var eventListCard = [EventResult]()
+    var datetimeUpdateCard  = ""
+    var datetimePublishCard  = ""
+    var durationCard = 0
+    var providerCard: ProviderResult?
+    var typeVideo: TypeVideo = .video
+    var categoryContentType: ContentTypeResult?
+    var contentPeriodDoingCard: ContentPeriodResult?
+
+    var label = ""
+    var categoryCard: CategoryResult?
+    var contentTypeCode = ContentCode.none
+    var url: String?
+    var duration = "00:00:00"
+    var content: ContentResult?
+    var contentLocation: ContentResult?
+    var progress: ProgressResult?
+    var datetimeStart = ""
+    var datetimeEnd = ""
+    var code = ContentCode.none
+    var type = 0
+    var surveyType: Int?
+    var surveyTypeDisplay: String?
+    var uuid: String?
     
-    func subText() -> String? {
-        if let expireString = datetimeExpire {
-            return "expired_on".localized() + " " + formatter.with(dateFormat: "d MMM yyyy",dateString: expireString)
+    func periodDisplayCard(transaction: TransactionResult?, format: String = "d MMM yyyy, HH:mm") -> String {
+        
+        if let t = transaction {
+            if t.datetimeEnd == "" {
+                return unlimitText.localized()
+            } else {
+                let expireText = formatter.with(dateFormat: format, dateString: t.datetimeEnd)
+                return "expired_on".localized() + " " + expireText
+            }
+        } else {
+            if let periodDoing = self.contentPeriodDoingCard {
+                if periodDoing.typeExpire == .schedule {
+                    return Utility.textCompareDate(start: periodDoing.datetimeStart, end: periodDoing.datetimeEnd)
+                    
+                } else if periodDoing.typeExpire == .duration {
+                    if let t = transaction,
+                        let start = formatter.dateWith(dateString: t.datetimeStart) {
+                        var expireText = formatter.with(dateFormat: format, dateString: t.datetimeStart)
+                        if periodDoing.duration > 0 {
+                            let moreTime = start.addingTimeInterval(TimeInterval(periodDoing.duration.seconds))
+                            expireText = formatter.with(dateFormat: format, date: moreTime)
+                        }
+                        return "expired_on".localized() + " " + expireText
+                    } else {
+                        return "\(periodDoing.duration.textDays) \("of_testing_period".localized())"
+                        //return "expired_date".localized() + " : " + "after" + periodDoing.duration.stringFromSec
+                    }
+                } else if periodDoing.typeExpire == .noExpiry {
+                    return unlimitText.localized()
+                }
+            }
         }
-        return nil
+        return ""
     }
     
-    lazy var percentText: String = {
-        return "\(percentRatio.roundInt)%"
-    }()
+    required init?(map: Map) {
+        super.init(map: map)
+    }
     
-    func icon() -> UIImage? {
-        return UIImage(named: "Main_menu")
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        provider                <- map["content_type"]
+        contentPeriodDoingCard
+        //eventListCard           <- map["event_list"]
+        categoryContentType     <- map["content_type"]
+        durationCard            <- map["duration"]
+        providerCard            <- map["provider"]
+        datetimeUpdateCard      <- map["datetime_update"]
+        datetimePublishCard     <- map["datetime_publish"]
+        typeVideo               <- map["type"]
+        typeVideo               <- map["content.type"]
+        label                   <- map["label"]
+        categoryCard            <- map["category"]
+        contentTypeCode         <- map["content_type.code"]
+        contentLocation         <- map["content_location"]
+        datetimeStart           <- map["datetime_start"]
+        datetimeEnd             <- map["datetime_end"]
+        url                     <- map["url"]
+        duration                <- map["duration"]
+        content                 <- map["content"]
+        progress                <- map["progress"]
+        type                    <- map["type"]
+        uuid                    <- map["uuid"]
+        surveyType              <- map["survey_type"]
+        surveyTypeDisplay       <- map["survey_type_display"]
+        
     }
 }
 
@@ -128,15 +325,27 @@ class SectionSLPResult: PointObject {
 }
 
 class MarkObject: PointObject {
-    
+    var imageFinish: UIImage?
+
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+    }
 }
 
 class PointObject: BaseResult, Identifiable {
     let uuid = UUID()
+    var pointStatus: ProgressStatus = ProgressStatus.notStart
     var isRequired = false
     var index = 0
     var isReady = false
     
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+    }
 }
 
 enum SLPTypeInt: Int {
@@ -191,7 +400,8 @@ enum SLPType: String {//use home, home.title
     }
 }
 
-class LearningPathResult: ContentResult {
+class LearningPathResult: ContentResult, Identifiable {
+    let uuid = UUID()
     var provider: ProviderResult?
     var transaction: TransactionResult?
     var contentType: ContentTypeResult?
@@ -206,6 +416,7 @@ class LearningPathResult: ContentResult {
     }
     
     override func getDateText() -> String {
+        let calendar = Calendar(identifier: .gregorian)
         if let t = self.transaction, self.slpType == .online {
             if t.datetimeEnd == "" {
                 return "no_expiry".localized()
@@ -459,5 +670,46 @@ class ProgressGroup: BaseResult {
         todoCount <- map["to_do"]
         doingCount <- map["doing"]
         doneCount <- map["done"]
+    }
+}
+
+enum PeriodType: Int {
+    case noExpiry = 0
+    case schedule = 1
+    case duration = 2
+}
+
+class ContentPeriodResult: BaseResult {
+    var datetimeActive = ""
+    var datetimeStart = ""
+    var datetimeEnd = ""
+    var typeExpire = PeriodType.noExpiry
+    var typeExpireLabel = ""
+    var duration = 0 // sec
+    var isActive = false
+
+    lazy var timeText: String = {
+        if self.datetimeStart == "", self.datetimeEnd == "" {
+            return unlimitText
+        } else {
+            return Utility.textCompareDate(start: self.datetimeStart, end: self.datetimeEnd)
+        }
+    }()
+
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        id <- map["id"]
+        datetimeStart <- map["datetime_start"]
+        datetimeEnd <- map["datetime_end"]
+        typeExpireLabel <- map["type_expire_label"]
+        duration <- map["duration"]
+        isActive <- map["is_active"]
+        typeExpire <- map["type_expire"]
+
+        datetimeActive <- map["datetime_active"]
     }
 }

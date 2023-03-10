@@ -9,6 +9,18 @@ import SwiftUI
 
 struct PathwayItemSwiftUI: View {
     @State var item = PathwayMock.pathwayDetail
+    //@State var item: LearnObjectResult
+    
+    private var code: ContentCode {
+        item.code
+    }
+    
+    private var category: CategoryResult? {
+        item.category
+    }
+    
+    private var classProgram: String?
+    private var point: Int?
     
     var body: some View {
 
@@ -75,28 +87,24 @@ struct PathwayItemSwiftUI: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             // Price
-            HStack {
-                Text("฿\(item.discountPrice.withCommas())")
-                    .foregroundColor(.black)
-                    .font(.font(14, .bold))
-                
-                
-                Text("฿\(item.price.withCommas())")
-                    .foregroundColor(.neutral(.cool))
-                    .font(.font(12, .regular))
-                    .strikethrough()
-                    
-            }.frame(maxWidth: .infinity, alignment: .leading)
+            if item.price != nil {
+                priceView
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
             
             providerView
             .frame(maxWidth: .infinity, alignment: .leading)
             
             HStack {
-                IconTitleSwiftUI(icon: item.typeIcon, title: item.typeName)
+                IconTitleSwiftUI(icon: code.icon() ?? UIImage(), title: code.name())
                 Text("・")
                     .foregroundColor(.neutral(.cool))
-                Text(item.category?.name ?? "")
-                    .font(.font(12, .regular))
+                if let category = category {
+                    Text(category.name)
+                        .font(.font(12, .regular))
+                        .foregroundColor(.neutral(.cool, .shade900))
+                }
+                
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
@@ -114,6 +122,25 @@ struct PathwayItemSwiftUI: View {
             //Spacer()
         }
         .padding()
+    }
+    
+    var priceView: some View {
+        HStack {
+            if let discountPrice = item.discountPrice {
+                Text("฿\(discountPrice.withCommas())")
+                    .foregroundColor(.black)
+                    .font(.font(14, .bold))
+            }
+            
+            
+            if let price = item.price {
+                Text("฿\(price.withCommas())")
+                    .foregroundColor(.neutral(.cool))
+                    .font(.font(12, .regular))
+                    .strikethrough()
+            }
+                
+        }
     }
     
     var providerView: some View {

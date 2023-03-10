@@ -12,24 +12,12 @@ struct PathwayGridSwiftUI: View {
     
     let mainColor: Color = PathwayStyle.mainColor.color
     
+    private let columns = UIDevice.isIPhone ? [GridItem(.flexible())] : [GridItem(.flexible()), GridItem(.flexible()) ]
+    
     var body: some View {
-        ScrollView {
-            Spacer(minLength: 16)
-            VStack {
-                pathwayMenuView
-            }
-            .frame(height: PathwayStyle.HEADER_HEIGHT)
-            .padding([.leading, .trailing], PathwayStyle.PADDING)
-            
-            Spacer(minLength: 16)
-            
-            VStack {
-                ScrollGridView
-            }
-            .padding([.leading, .trailing], PathwayStyle.PADDING)
+        VStack {
+            scrollGridView
         }
-        .accentColor(mainColor)
-        .listStyle(.sidebar)
     }
     
     var pathwayMenuView: some View {
@@ -38,26 +26,52 @@ struct PathwayGridSwiftUI: View {
         }
     }
     
-    private let columns = UIDevice.isIPhone ? [GridItem(.flexible())] : [GridItem(.flexible()), GridItem(.flexible()) ]
+    var headView: some View {
+        VStack {
+            Spacer(minLength: 16)
+            VStack {
+                pathwayMenuView
+            }
+            .frame(height: PathwayStyle.HEADER_HEIGHT)
+            .padding([.leading, .trailing], PathwayStyle.PADDING)
+            
+            Spacer(minLength: 16)
+        }
+    }
     
-    var ScrollGridView: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 16) {
-                ForEach(viewModel.pathwaySectionList, id: \SectionSLPResult.uuid) { section in
-                    Section(header: GridSectionSwiftUI(section: section)) {
-                        
-                        ForEach(section.list, id:\LearnObjectResult.id) { item in
-                            AllFeedItemV5SwiftUI(item: item)
-                                .frame(height: 200)
+    var scrollGridView: some View {
+        GeometryReader { geometry in
+            ScrollView {
+                
+                headView
+                
+                LazyVGrid(columns: columns, spacing: 16) {
+                    ForEach(viewModel.pathwaySectionList, id: \SectionSLPResult.uuid) { section in
+                        Section(header: GridSectionSwiftUI(section: section)) {
+                            ForEach(section.list, id:\LearnObjectResult.id) { item in
+                                let marginBorder: CGFloat = UIDevice.isIPad ? 200 : 90
+                                let itemWidth: CGFloat = (geometry.size.width - marginBorder) / CGFloat(columns.count)
+                                AllFeedItemV5SwiftUI(item: item,
+                                                     code: item.contentTypeCode,
+                                                     category: item.content?.categoryCard,
+                                                     classProgram: nil,
+                                                     point: nil)
+                                .frame(
+                                    width: itemWidth ,
+                                    height: (itemWidth * (9 / 16)) + 184
+                                )
+                                .padding([.bottom], 24)
+                                .onTapGesture {
+                                    print("Tapped item \(item.name)")
+                                    
+                                }
+                                
+                            }
                         }
                     }
-                }
-            }.padding()
-            
-            
-            
+                }.padding([.leading, .trailing], PathwayStyle.PADDING)
+            }
         }
-        
     }
 }
 

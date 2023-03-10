@@ -13,13 +13,15 @@ struct componentApp: App {
 
     var body: some Scene {
         WindowGroup {
+            ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
 //            ItemListSwiftUI()
 //                .environmentObject(PathwayViewModel())
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             
-            PathwayCurriculumSwiftUI()
-                .environmentObject(PathwayViewModel())
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            PathwayCurriculumSwiftUI()
+//                .environmentObject(PathwayViewModel())
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             
         }
     }

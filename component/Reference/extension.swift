@@ -92,6 +92,10 @@ extension Double {
 }
 
 extension Int {
+    var textDays: String {
+        let day = self.dayFromSec
+        return day.textNumber(many: "days")
+    }
     
     func shorted() -> String {
         let d = Double(self)

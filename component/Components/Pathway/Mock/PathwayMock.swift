@@ -75,6 +75,14 @@ struct PathwayMock {
         return JSONFile.loadItemList("pathway_section_list.json")
     }
     
+    static var pathwayList: [LearningPathResult] {
+        return self.pathwayPage.list
+    }
+    
+    static var pathwayPage: LearningPathPageResult {
+        return JSONFile.loadItem("pathway_page.json")
+    }
+    
     static let backgroundImageLink = "https://lcs.conicle.com/static/back/default/schedule_learning_path/candy_land/CandyLand_Background.png"
     
 }
