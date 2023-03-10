@@ -1,0 +1,943 @@
+{
+  "is_environmental" : false,
+  "content_level" : null,
+  "count_past" : 0,
+  "type_enroll" : 2,
+  "id" : 48,
+  "point" : 9900,
+  "content_program" : null,
+  "category" : {
+    "id" : 1,
+    "count" : 0,
+    "name" : "Leadership",
+    "image" : "https:\/\/lcs.conicle.com\/media\/default\/content\/default_category.png"
+  },
+  "is_dependency" : false,
+  "theme_config" : {
+    "id" : 2,
+    "config" : {
+      "section_image_list" : [
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/section-1.png",
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/section-2.png",
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/section-3.png",
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/section-4.png"
+      ],
+      "pass_path_color" : "#F85459",
+      "inner_pass_path_height" : 12,
+      "background_image" : "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/CandyLand_Background.png",
+      "sub_text_color" : "#F85459",
+      "menu_background_color" : "#FA97A1",
+      "overview_menu_background_color" : "#FFD2D7",
+      "section_list_button_color" : "#8F4C22",
+      "section_list_button_inactive_color" : "#543028",
+      "main_color" : "#FFFFFF",
+      "user_point_image" : "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/user.png",
+      "end_point_image" : "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/end.png",
+      "point_box_text_color" : "#FFFFFF",
+      "start_point_image" : "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/start.png",
+      "point_box_background_start_color" : "#DD4123",
+      "sub_color" : "#F85459",
+      "point_box_background_end_color" : "#FC7F67",
+      "pass_path_ratio" : 3.3300000000000001,
+      "overview_background_color" : "#FFB4BB",
+      "background_color" : "#FFFFFF",
+      "section_color" : "#FFFFFF",
+      "pass_inner_path_color" : "#FFA3AD",
+      "tertiary_text_color" : "#F85459",
+      "section_box_background_end_color" : "#D84F70",
+      "menu_border_color" : "#F5F5F5",
+      "section_background_color" : "#F85459",
+      "section_list_button_background_color" : "#FFFFFF",
+      "pass_path_height" : 20,
+      "path_height" : 6,
+      "element_image_list" : [
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/curve-1.png",
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/curve-2.png",
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/curve-3.png",
+        "https:\/\/lcs.conicle.com\/static\/back\/default\/schedule_learning_path\/candy_land\/curve-4.png"
+      ],
+      "path_color" : "#FFFFFF",
+      "section_box_background_start_color" : "#FF8AA6",
+      "section_box_text_color" : "#FFFFFF",
+      "text_color" : "#543028"
+    },
+    "name" : "Candy Land",
+    "image" : "https:\/\/lcs.conicle.com\/media\/learning_path\/theme\/2022\/06\/Cover_Candy_Land.png"
+  },
+  "competency_list" : [
+
+  ],
+  "content_type" : {
+    "id" : 113,
+    "code" : "learning_path.learningpath"
+  },
+  "is_certificate" : false,
+  "dict_datetime_update" : "2023-02-09T14:22:52.573909Z",
+  "count_transaction" : 996,
+  "contact" : "",
+  "duration" : 26172,
+  "capacity" : 0,
+  "is_messenger" : false,
+  "enroll_condition" : {
+    "schedule" : null,
+    "checklist_id" : null,
+    "slot_id" : 513,
+    "resume_content_id" : 5,
+    "content_request_id" : null,
+    "section_period" : null,
+    "case" : 2,
+    "count_waiting_approve_transaction" : 0,
+    "color" : "#FD1100",
+    "code" : "start_learning",
+    "is_schedule" : false,
+    "is_clickable" : true,
+    "resume_content_type" : {
+      "id" : 125,
+      "code" : "course.course"
+    },
+    "waiting_no" : -1,
+    "section_id" : 101,
+    "count_success_transaction" : 996,
+    "is_show_button" : true,
+    "is_dependency" : false
+  },
+  "tag_list" : [
+
+  ],
+  "extra" : {
+
+  },
+  "datetime_update" : "2023-02-09T14:23:21.054719Z",
+  "content_period_enroll" : {
+    "id" : 562,
+    "type_expire_label" : "unpublish",
+    "datetime_end" : null,
+    "datetime_start" : null,
+    "duration" : 0,
+    "is_active" : false,
+    "type_expire" : -1
+  },
+  "config_datetime_update" : "2023-02-09T14:23:21.054719Z",
+  "count_survey" : 0,
+  "image" : "https:\/\/lcs.conicle.com\/media\/learning_path\/2022\/11\/67745fd5-7ea.jpg",
+  "condition" : null,
+  "datetime_end" : "2023-06-30T23:59:59+07:00",
+  "api" : "web",
+  "code" : "L1-3,S1-2\/04",
+  "name" : "Content Selection Sets #4",
+  "provider" : {
+    "id" : 15,
+    "name" : "TG Academy",
+    "image" : "https:\/\/lcs.conicle.com\/media\/default\/content\/provider_no_picture_profile.png",
+    "is_display" : true
+  },
+  "count_item" : 12,
+  "content_count_list" : [
+    {
+      "count" : 8,
+      "content_type" : 125,
+      "code" : "course.course"
+    },
+    {
+      "count" : 4,
+      "content_type" : 206,
+      "code" : "survey.survey"
+    }
+  ],
+  "discount_price" : 3900,
+  "price" : 1390,
+  "section_list" : [
+    {
+      "content_type" : {
+        "id" : 114,
+        "code" : "learning_path.section"
+      },
+      "sort" : 1,
+      "id" : 101,
+      "day_left" : 127,
+      "datetime_end" : "2023-06-30T23:59:59+07:00",
+      "datetime_start" : "2023-02-11T00:00:00+07:00",
+      "is_display" : true,
+      "slot_list" : [
+        {
+          "is_required" : true,
+          "id" : 513,
+          "content" : {
+            "id" : 5,
+            "code" : "LHT22P032",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzY4OA%3D%3D_1655895153.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 513,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 101
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "Managing Project with Agility",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "Managing Project with Agility",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31992,
+            "datetime_create" : "2023-02-23T18:50:37.852754+07:00",
+            "datetime_update" : "2023-02-23T18:50:37.852794+07:00",
+            "account_id" : 15,
+            "count_material" : 11,
+            "content_id" : 5,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        },
+        {
+          "is_required" : true,
+          "id" : 514,
+          "content" : {
+            "id" : 1,
+            "code" : "Survey01",
+            "image" : "https:\/\/lcs.conicle.com\/media\/default\/content\/default_survey.png",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 514,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 101
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "Post Learning Journal",
+            "content_type" : {
+              "id" : 206,
+              "code" : "survey.survey"
+            }
+          },
+          "name" : "Post Learning Journal",
+          "dependency_list" : [
+            {
+              "id" : 9,
+              "content" : {
+                "id" : 5,
+                "code" : "LHT22P032",
+                "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzY4OA%3D%3D_1655895153.jpg",
+                "content_location" : {
+                  "type_learning_path" : 1,
+                  "slot_id" : 513,
+                  "learning_path_id" : 48,
+                  "learning_path_section_id" : 101
+                },
+                "is_display" : true,
+                "content_period_publish" : null,
+                "name" : "Managing Project with Agility",
+                "content_type" : {
+                  "id" : 125,
+                  "code" : "course.course"
+                }
+              },
+              "content_id" : 514,
+              "depend_content_id" : 513,
+              "section" : {
+                "id" : 101,
+                "name" : "L1-04",
+                "sort" : 1
+              },
+              "progress" : {
+                "id" : 31992,
+                "datetime_create" : "2023-02-23T18:50:37.852754+07:00",
+                "datetime_update" : "2023-02-23T18:50:37.852794+07:00",
+                "account_id" : 15,
+                "count_material" : 11,
+                "content_id" : 5,
+                "has_action_log" : false,
+                "datetime_complete" : null,
+                "status_label" : "not_start",
+                "count_material_complete" : 0,
+                "duration" : 0,
+                "percent" : 0,
+                "is_override" : false,
+                "status" : 0,
+                "slot_resume_id" : null
+              }
+            }
+          ],
+          "progress" : {
+            "status" : 0,
+            "datetime_create" : "2023-02-23T18:50:39.206535+07:00",
+            "account_id" : 15,
+            "id" : 16033,
+            "datetime_complete" : null,
+            "datetime_update" : "2023-02-23T18:50:39.206575+07:00",
+            "content_id" : 1,
+            "status_label" : "not_start",
+            "percent" : 0
+          }
+        }
+      ],
+      "name" : "L1-04",
+      "desc" : "Please click next section to the content. >>> Managing Project with Agility"
+    },
+    {
+      "content_type" : {
+        "id" : 114,
+        "code" : "learning_path.section"
+      },
+      "sort" : 2,
+      "id" : 102,
+      "day_left" : 127,
+      "datetime_end" : "2023-06-30T23:59:59+07:00",
+      "datetime_start" : "2023-02-11T00:00:00+07:00",
+      "is_display" : true,
+      "slot_list" : [
+        {
+          "is_required" : true,
+          "id" : 515,
+          "content" : {
+            "id" : 28,
+            "code" : "KNW21C002",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzUwOA%3D%3D_1655895209.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 515,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 102
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "ใช้ข้อมูลเป็น เห็นทางเลือกที่เฉียบคม (Data-Driven Decision Making)",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "ใช้ข้อมูลเป็น เห็นทางเลือกที่เฉียบคม (Data-Driven Decision Making)",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31993,
+            "datetime_create" : "2023-02-23T18:50:38.118529+07:00",
+            "datetime_update" : "2023-02-23T18:50:38.118568+07:00",
+            "account_id" : 15,
+            "count_material" : 15,
+            "content_id" : 28,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        },
+        {
+          "is_required" : true,
+          "id" : 516,
+          "content" : {
+            "id" : 1,
+            "code" : "Survey01",
+            "image" : "https:\/\/lcs.conicle.com\/media\/default\/content\/default_survey.png",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 516,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 102
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "Post Learning Journal",
+            "content_type" : {
+              "id" : 206,
+              "code" : "survey.survey"
+            }
+          },
+          "name" : "Post Learning Journal",
+          "dependency_list" : [
+            {
+              "id" : 10,
+              "content" : {
+                "id" : 28,
+                "code" : "KNW21C002",
+                "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzUwOA%3D%3D_1655895209.jpg",
+                "content_location" : {
+                  "type_learning_path" : 1,
+                  "slot_id" : 515,
+                  "learning_path_id" : 48,
+                  "learning_path_section_id" : 102
+                },
+                "is_display" : true,
+                "content_period_publish" : null,
+                "name" : "ใช้ข้อมูลเป็น เห็นทางเลือกที่เฉียบคม (Data-Driven Decision Making)",
+                "content_type" : {
+                  "id" : 125,
+                  "code" : "course.course"
+                }
+              },
+              "content_id" : 516,
+              "depend_content_id" : 515,
+              "section" : {
+                "id" : 102,
+                "name" : "L2-04",
+                "sort" : 2
+              },
+              "progress" : {
+                "id" : 31993,
+                "datetime_create" : "2023-02-23T18:50:38.118529+07:00",
+                "datetime_update" : "2023-02-23T18:50:38.118568+07:00",
+                "account_id" : 15,
+                "count_material" : 15,
+                "content_id" : 28,
+                "has_action_log" : false,
+                "datetime_complete" : null,
+                "status_label" : "not_start",
+                "count_material_complete" : 0,
+                "duration" : 0,
+                "percent" : 0,
+                "is_override" : false,
+                "status" : 0,
+                "slot_resume_id" : null
+              }
+            }
+          ],
+          "progress" : {
+            "status" : 0,
+            "datetime_create" : "2023-02-23T18:50:39.218741+07:00",
+            "account_id" : 15,
+            "id" : 16034,
+            "datetime_complete" : null,
+            "datetime_update" : "2023-02-23T18:50:39.218779+07:00",
+            "content_id" : 1,
+            "status_label" : "not_start",
+            "percent" : 0
+          }
+        }
+      ],
+      "name" : "L2-04",
+      "desc" : "Please click next section to the content. >>> ใช้ข้อมูลเป็น เห็นทางเลือกที่เฉียบคม (Data-Driven Decision Making)"
+    },
+    {
+      "content_type" : {
+        "id" : 114,
+        "code" : "learning_path.section"
+      },
+      "sort" : 3,
+      "id" : 103,
+      "day_left" : 127,
+      "datetime_end" : "2023-06-30T23:59:59+07:00",
+      "datetime_start" : "2023-02-11T00:00:00+07:00",
+      "is_display" : true,
+      "slot_list" : [
+        {
+          "is_required" : true,
+          "id" : 517,
+          "content" : {
+            "id" : 17,
+            "code" : "DEO21C009",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzMxMA%3D%3D_1655895190.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 517,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 103
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "โค้ชทีมอย่างไรให้เติบโตแบบก้าวกระโดด (Super Coach Super Growth)",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "โค้ชทีมอย่างไรให้เติบโตแบบก้าวกระโดด (Super Coach Super Growth)",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31994,
+            "datetime_create" : "2023-02-23T18:50:38.451397+07:00",
+            "datetime_update" : "2023-02-23T18:50:38.451436+07:00",
+            "account_id" : 15,
+            "count_material" : 24,
+            "content_id" : 17,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        },
+        {
+          "is_required" : true,
+          "id" : 518,
+          "content" : {
+            "id" : 1,
+            "code" : "Survey01",
+            "image" : "https:\/\/lcs.conicle.com\/media\/default\/content\/default_survey.png",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 518,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 103
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "Post Learning Journal",
+            "content_type" : {
+              "id" : 206,
+              "code" : "survey.survey"
+            }
+          },
+          "name" : "Post Learning Journal",
+          "dependency_list" : [
+            {
+              "id" : 11,
+              "content" : {
+                "id" : 17,
+                "code" : "DEO21C009",
+                "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzMxMA%3D%3D_1655895190.jpg",
+                "content_location" : {
+                  "type_learning_path" : 1,
+                  "slot_id" : 517,
+                  "learning_path_id" : 48,
+                  "learning_path_section_id" : 103
+                },
+                "is_display" : true,
+                "content_period_publish" : null,
+                "name" : "โค้ชทีมอย่างไรให้เติบโตแบบก้าวกระโดด (Super Coach Super Growth)",
+                "content_type" : {
+                  "id" : 125,
+                  "code" : "course.course"
+                }
+              },
+              "content_id" : 518,
+              "depend_content_id" : 517,
+              "section" : {
+                "id" : 103,
+                "name" : "L3-04",
+                "sort" : 3
+              },
+              "progress" : {
+                "id" : 31994,
+                "datetime_create" : "2023-02-23T18:50:38.451397+07:00",
+                "datetime_update" : "2023-02-23T18:50:38.451436+07:00",
+                "account_id" : 15,
+                "count_material" : 24,
+                "content_id" : 17,
+                "has_action_log" : false,
+                "datetime_complete" : null,
+                "status_label" : "not_start",
+                "count_material_complete" : 0,
+                "duration" : 0,
+                "percent" : 0,
+                "is_override" : false,
+                "status" : 0,
+                "slot_resume_id" : null
+              }
+            }
+          ],
+          "progress" : {
+            "status" : 0,
+            "datetime_create" : "2023-02-23T18:50:39.227635+07:00",
+            "account_id" : 15,
+            "id" : 16035,
+            "datetime_complete" : null,
+            "datetime_update" : "2023-02-23T18:50:39.227675+07:00",
+            "content_id" : 1,
+            "status_label" : "not_start",
+            "percent" : 0
+          }
+        }
+      ],
+      "name" : "L3-04",
+      "desc" : "Please click next section to the content. >>> โค้ชทีมอย่างไรให้เติบโตแบบก้าวกระโดด (Super Coach Super Growth)"
+    },
+    {
+      "content_type" : {
+        "id" : 114,
+        "code" : "learning_path.section"
+      },
+      "sort" : 4,
+      "id" : 104,
+      "day_left" : 127,
+      "datetime_end" : "2023-06-30T23:59:59+07:00",
+      "datetime_start" : "2023-02-11T00:00:00+07:00",
+      "is_display" : true,
+      "slot_list" : [
+        {
+          "is_required" : true,
+          "id" : 519,
+          "content" : {
+            "id" : 32,
+            "code" : "MDJ21P015",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzY1MQ%3D%3D_1675086096.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 519,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 104
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "การสร้างผู้นำที่ยืดหยุ่นในยุค Next Normal (Resilient Leadership)",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "การสร้างผู้นำที่ยืดหยุ่นในยุค Next Normal (Resilient Leadership)",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31995,
+            "datetime_create" : "2023-02-23T18:50:38.943811+07:00",
+            "datetime_update" : "2023-02-23T18:50:38.943849+07:00",
+            "account_id" : 15,
+            "count_material" : 8,
+            "content_id" : 32,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        },
+        {
+          "is_required" : true,
+          "id" : 520,
+          "content" : {
+            "id" : 1,
+            "code" : "Survey01",
+            "image" : "https:\/\/lcs.conicle.com\/media\/default\/content\/default_survey.png",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 520,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 104
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "Post Learning Journal",
+            "content_type" : {
+              "id" : 206,
+              "code" : "survey.survey"
+            }
+          },
+          "name" : "Post Learning Journal",
+          "dependency_list" : [
+            {
+              "id" : 12,
+              "content" : {
+                "id" : 32,
+                "code" : "MDJ21P015",
+                "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzY1MQ%3D%3D_1675086096.jpg",
+                "content_location" : {
+                  "type_learning_path" : 1,
+                  "slot_id" : 519,
+                  "learning_path_id" : 48,
+                  "learning_path_section_id" : 104
+                },
+                "is_display" : true,
+                "content_period_publish" : null,
+                "name" : "การสร้างผู้นำที่ยืดหยุ่นในยุค Next Normal (Resilient Leadership)",
+                "content_type" : {
+                  "id" : 125,
+                  "code" : "course.course"
+                }
+              },
+              "content_id" : 520,
+              "depend_content_id" : 519,
+              "section" : {
+                "id" : 104,
+                "name" : "S1-04",
+                "sort" : 4
+              },
+              "progress" : {
+                "id" : 31995,
+                "datetime_create" : "2023-02-23T18:50:38.943811+07:00",
+                "datetime_update" : "2023-02-23T18:50:38.943849+07:00",
+                "account_id" : 15,
+                "count_material" : 8,
+                "content_id" : 32,
+                "has_action_log" : false,
+                "datetime_complete" : null,
+                "status_label" : "not_start",
+                "count_material_complete" : 0,
+                "duration" : 0,
+                "percent" : 0,
+                "is_override" : false,
+                "status" : 0,
+                "slot_resume_id" : null
+              }
+            }
+          ],
+          "progress" : {
+            "status" : 0,
+            "datetime_create" : "2023-02-23T18:50:39.235814+07:00",
+            "account_id" : 15,
+            "id" : 16036,
+            "datetime_complete" : null,
+            "datetime_update" : "2023-02-23T18:50:39.235848+07:00",
+            "content_id" : 1,
+            "status_label" : "not_start",
+            "percent" : 0
+          }
+        }
+      ],
+      "name" : "S1-04",
+      "desc" : "Please click next section to the content. >>> การสร้างผู้นำที่ยืดหยุ่นในยุค Next Normal (Resilient Leadership)"
+    },
+    {
+      "content_type" : {
+        "id" : 114,
+        "code" : "learning_path.section"
+      },
+      "sort" : 5,
+      "id" : 105,
+      "day_left" : 127,
+      "datetime_end" : "2023-06-30T23:59:59+07:00",
+      "datetime_start" : "2023-02-11T00:00:00+07:00",
+      "is_display" : true,
+      "slot_list" : [
+        {
+          "is_required" : true,
+          "id" : 521,
+          "content" : {
+            "id" : 37,
+            "code" : "P0121C015",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzQ1NQ%3D%3D_1675086103.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 521,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 105
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "[Copinion Podcast] HRD in the New Decade EP.1: HR as a Career",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "[Copinion Podcast] HRD in the New Decade EP.1: HR as a Career",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31996,
+            "datetime_create" : "2023-02-23T18:50:39.146170+07:00",
+            "datetime_update" : "2023-02-23T18:50:39.146210+07:00",
+            "account_id" : 15,
+            "count_material" : 1,
+            "content_id" : 37,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        },
+        {
+          "is_required" : true,
+          "id" : 522,
+          "content" : {
+            "id" : 36,
+            "code" : "P0121C016",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzQ1Ng%3D%3D_1675086103.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 522,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 105
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "[Copinion Podcast] HRD in the New Decade EP.2: HR as the Driving Force",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "[Copinion Podcast] HRD in the New Decade EP.2: HR as the Driving Force",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31997,
+            "datetime_create" : "2023-02-23T18:50:39.244697+07:00",
+            "datetime_update" : "2023-02-23T18:50:39.244729+07:00",
+            "account_id" : 15,
+            "count_material" : 1,
+            "content_id" : 36,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        },
+        {
+          "is_required" : true,
+          "id" : 523,
+          "content" : {
+            "id" : 35,
+            "code" : "P0121C017",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzQ1Nw%3D%3D_1675086102.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 523,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 105
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "[Copinion Podcast] Never-Ending Studies EP.1: Live & Learn",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "[Copinion Podcast] Never-Ending Studies EP.1: Live & Learn",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31998,
+            "datetime_create" : "2023-02-23T18:50:39.275683+07:00",
+            "datetime_update" : "2023-02-23T18:50:39.275753+07:00",
+            "account_id" : 15,
+            "count_material" : 1,
+            "content_id" : 35,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        },
+        {
+          "is_required" : true,
+          "id" : 524,
+          "content" : {
+            "id" : 34,
+            "code" : "P0121C018",
+            "image" : "https:\/\/lcs.conicle.com\/media\/course\/conicle-store\/image\/Y291cnNlX2NvbmljbGV4XzQ1OA%3D%3D_1675086101.jpg",
+            "content_location" : {
+              "type_learning_path" : 1,
+              "slot_id" : 524,
+              "learning_path_id" : 48,
+              "learning_path_section_id" : 105
+            },
+            "is_display" : true,
+            "content_period_publish" : null,
+            "has_permission" : true,
+            "name" : "[Copinion Podcast] Never-Ending Studies EP.2: Data World",
+            "content_type" : {
+              "id" : 125,
+              "code_sub" : "course.coniclex",
+              "code" : "course.course"
+            }
+          },
+          "name" : "[Copinion Podcast] Never-Ending Studies EP.2: Data World",
+          "dependency_list" : null,
+          "progress" : {
+            "id" : 31999,
+            "datetime_create" : "2023-02-23T18:50:39.309939+07:00",
+            "datetime_update" : "2023-02-23T18:50:39.310001+07:00",
+            "account_id" : 15,
+            "count_material" : 1,
+            "content_id" : 34,
+            "has_action_log" : false,
+            "datetime_complete" : null,
+            "status_label" : "not_start",
+            "count_material_complete" : 0,
+            "duration" : 0,
+            "percent" : 0,
+            "is_override" : false,
+            "status" : 0,
+            "slot_resume_id" : null
+          }
+        }
+      ],
+      "name" : "S2-04",
+      "desc" : "Please click next section to the content. >>> Copinion Podcast"
+    }
+  ],
+  "type_access" : -1,
+  "desc" : "",
+  "datetime_start" : "2023-02-11T00:00:00+07:00",
+  "count_section" : 5,
+  "transaction" : {
+    "status" : 0,
+    "form" : null,
+    "method_label" : "assigned",
+    "id" : 9315,
+    "is_allow_start" : true,
+    "datetime_end" : "2023-06-30T16:59:59Z",
+    "status_label" : "success",
+    "datetime_start" : "2023-02-23T18:50:37.804248+07:00",
+    "progress" : {
+      "id" : 9098,
+      "datetime_update" : "2023-02-23T18:50:37.818301+07:00",
+      "account_id" : 15,
+      "count_material" : 12,
+      "content_id" : 48,
+      "has_action_log" : false,
+      "datetime_complete" : null,
+      "status_label" : "not_start",
+      "count_material_complete" : 0,
+      "duration" : 0,
+      "percent" : 0,
+      "is_override" : false,
+      "status" : 0,
+      "datetime_create" : "2023-02-23T18:50:37.818263+07:00"
+    },
+    "progress_snap" : null
+  },
+  "count_view" : 2022,
+  "is_access_content" : true,
+  "filter_update" : {
+    "instructor" : "2023-01-30T13:41:49.495837Z",
+    "category" : "2022-07-04T05:27:21.277021Z",
+    "provider" : "2023-01-30T13:41:49.379130Z"
+  },
+  "type_learning_path" : 1,
+  "duration_expire" : 0
+}

@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "asyncimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zzzzeu/AsyncImage.git",
+      "state" : {
+        "revision" : "854d01f6bb9550f4aeee8959ab5b67d7d7775f02",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "objectmapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tristanhimmelman/ObjectMapper.git",
+      "state" : {
+        "revision" : "0b96a734de3ea1c87374ae677064f86adb0716ec",
+        "version" : "4.2.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "a812079ae91a7f2e627364c42ea7b98abfa366ed",
+        "version" : "5.15.4"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "61fefe9c284fd41ddef77d02749e88f00c305196",
+        "version" : "2.2.2"
+      }
+    }
+  ],
+  "version" : 2
+}

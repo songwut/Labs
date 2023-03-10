@@ -1,0 +1,259 @@
+[
+  {
+    "filter": "latest",
+    "data": [
+      {
+        "id": 68,
+        "name": "Toon 1 - I do not understand why the heroine in the book is always prettier than the one at home.",
+        "image": "https://develop-5-pathway.conicle.co/media/playlist_playlist/playlist_68_1d3599e5-eb8d-4b36-ad96-8f82d4323183.jpg",
+        "desc": "Thereâ€™s no need to imagine that youâ€™re a wondrous beauty, because thatâ€™s what you are.",
+        "content_count": 9,
+        "follower": {
+          "count": 4,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "document-tag",
+          "more": 10
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 102,
+        "name": "à¸ªà¸£à¹‰à¸²à¸‡à¸¢à¸²à¸à¸™à¸±à¸à¸™à¸°à¸­à¸´playlistà¸«à¸¥à¹ˆà¸­à¸™à¸¡à¸±à¸™à¸•à¹‰à¸­à¸‡à¹‚à¸”à¸™à¸Šà¸±à¹‰à¸™à¸•à¸š",
+        "image": "https://develop-5-pathway.conicle.co/media/playlist_playlist/2022/10/56b04860-dff.jpg",
+        "desc": "à¸Šà¸±à¹‰à¸™à¸ˆà¸°à¸ªà¸²à¸›à¹à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸à¸",
+        "content_count": 0,
+        "follower": {
+          "count": 3,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "document-tag",
+          "more": 38
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 40,
+        "name": "Flash card All Playlist",
+        "image": "https://develop-5-pathway.conicle.co/media/playlist_playlist/2022/08/287c7857-514.jpg",
+        "desc": "aaa",
+        "content_count": 5,
+        "follower": {
+          "count": 1,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "admin-create",
+          "more": 0
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 81,
+        "name": "jay test",
+        "image": "https://develop-5-pathway.conicle.co/media/playlist_playlist/2022/10/57f3e4c4-95a.jpg",
+        "desc": null,
+        "content_count": 2,
+        "follower": {
+          "count": 2,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "a",
+          "more": 4
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 96,
+        "name": "Nulls",
+        "image": "https://develop-5-pathway.conicle.co/media/default/content/default_playlist.png",
+        "desc": "",
+        "content_count": 1,
+        "follower": {
+          "count": 1,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "testNewTag",
+          "more": 9
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 94,
+        "name": "à¸¡à¸²à¸”à¸¹à¸«à¸™à¹ˆà¸­à¸¢à¸”à¸´à¹ƒà¸Šà¹‰à¹„à¸‡à¸­à¸°",
+        "image": "https://develop-5-pathway.conicle.co/media/default/content/default_playlist.png",
+        "desc": "",
+        "content_count": 2,
+        "follower": {
+          "count": 3,
+          "is_follower": false
+        },
+        "tag": null,
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 87,
+        "name": "TTT$$$$$$",
+        "image": "https://develop-5-pathway.conicle.co/media/default/content/default_playlist.png",
+        "desc": "3w4324234234",
+        "content_count": 0,
+        "follower": {
+          "count": 2,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "document-tag",
+          "more": 4
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 64,
+        "name": "3 image",
+        "image": "https://develop-5-pathway.conicle.co/media/playlist_playlist/2022/10/f86f4b23-f7c.jpg",
+        "desc": "3 image",
+        "content_count": 4,
+        "follower": {
+          "count": 2,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "course-request",
+          "more": 0
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 6,
+        "name": "ugc à¹€à¸¥à¸´à¸™à¸™à¸´à¹ˆà¸‡à¹† à¹€à¸žà¸¥à¸¢à¸¥à¸´à¸ª",
+        "image": "https://develop-5-pathway.conicle.co/media/playlist_playlist/playlist_6_19e70576-c2d3-4527-97d9-94cd0cc714b2.jpg",
+        "desc": null,
+        "content_count": 11,
+        "follower": {
+          "count": 4,
+          "is_follower": false
+        },
+        "tag": null,
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      },
+      {
+        "id": 62,
+        "name": "playlist ploy0070",
+        "image": "https://develop-5-pathway.conicle.co/media/default/content/default_playlist.png",
+        "desc": "",
+        "content_count": 1,
+        "follower": {
+          "count": 3,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "QA-Test",
+          "more": 0
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      }
+    ]
+  },
+  {
+    "filter": "editor_pick",
+    "data": [
+      {
+        "id": 40,
+        "name": "Flash card All Playlist",
+        "image": "https://develop-5-pathway.conicle.co/media/playlist_playlist/2022/08/287c7857-514.jpg",
+        "desc": "aaa",
+        "content_count": 5,
+        "follower": {
+          "count": 1,
+          "is_follower": false
+        },
+        "tag": {
+          "name": "admin-create",
+          "more": 0
+        },
+        "owner": null,
+        "content_type": {
+          "id": 387,
+          "type": null,
+          "code": "playlist.playlist",
+          "external_code": "internal.playlist",
+          "group": "internal"
+        }
+      }
+    ]
+  }
+]
