@@ -91,6 +91,19 @@ class LearnObjectResult: PointObject { // MaterialResult Course, Class, Test ...
     var price: Int?
     var discountPrice: Int?
     
+    var dateFlagText: String? {
+        let code = contentTypeCode
+        switch code {
+        case .liveIn, .liveEx, .classIn, .classEx, .classProgram, .eventProgram:
+            if !datetimeStart.isEmpty {
+                return datetimeStart
+            } else {
+                return nil
+            }
+        default:
+            return nil
+        }
+    }
     
     var isLock: Bool {
         if isDependency || self.hasPermission == false {
@@ -192,8 +205,7 @@ class LearnObjectResult: PointObject { // MaterialResult Course, Class, Test ...
         subType <- map["content.content_type.code_sub"]
         datetimeEnd <- map["datetime_end"]
         datetimeStart <- map["datetime_start"]
-        contentTypeCode <- map["content_type.code"]
-        contentTypeCode <- map["content_type"]
+        contentTypeCode <- map["content.content_type.code"]
         typeVideo <- map["content.type"]
         isRequired <- map["is_required"]
         //manageDependency()
@@ -301,6 +313,7 @@ class SectionSLPResult: PointObject {
     var sort = 1
     var num = 1 //manual calculate
     var collapsed: Bool = false
+    @State var isExpanded: Bool = true
     var isDisplay: Bool = false
     var datetimeStart = ""
     var datetimeEnd = ""
@@ -406,9 +419,20 @@ class LearningPathResult: ContentResult, Identifiable {
     var transaction: TransactionResult?
     var contentType: ContentTypeResult?
     var category: CategoryResult?
-    var point: Int = 0
+    var point: Int?
+    var sectionCount: Int?
+    var materialCount: Int = 0
     var typeIcon: UIImage {
         contentType?.code.icon() ?? UIImage()
+    }
+    
+    
+    var materialCountText: String {
+        materialCount.textNumber(many: "contents")
+    }
+    
+    var sectionCountText: String? {
+        sectionCount?.textNumber(many: "sections")
     }
     
     var typeName: String {
@@ -451,6 +475,8 @@ class LearningPathResult: ContentResult, Identifiable {
     
     override func mapping(map: Map) {
         super.mapping(map: map)
+        materialCount           <- map["material_count"]
+        sectionCount            <- map["section_count"]
         point                   <- map["point"]
         category                <- map["category"]
         provider                <- map["provider"]

@@ -1,0 +1,52 @@
+{
+  "id": 6259,
+  "name": "For PW à¸«à¹‰à¸²à¸¡à¹ƒà¸Šà¹‰ - Class Program",
+  "content": {
+    "id": 156,
+    "name": "For PW à¸«à¹‰à¸²à¸¡à¹ƒà¸Šà¹‰ - Class Program",
+    "code": "For PW cl pr",
+    "image": "https://sgp1.digitaloceanspaces.com/develop-5-pathway-conicle-co/learn/event_program/38f2b1b6-4469-46b1-b043-aa8ad8c04b6f.jpeg",
+    "image_key": "learn/event_program/38f2b1b6-4469-46b1-b043-aa8ad8c04b6f.jpeg",
+    "content_type": {
+      "id": 142,
+      "code": "event_program.eventprogram",
+      "external_code": "internal.class_program"
+    },
+    "event_list": [],
+    "is_display": true,
+    "content_location": {
+      "learning_path_id": 391,
+      "learning_path_section_id": 1112,
+      "slot_id": 6259,
+      "type_learning_path": 0
+    },
+    "content_period_publish": null,
+    "category": {
+      "id": 176,
+      "name": "CATREPRO1"
+    },
+    "provider": {
+      "id": 1,
+      "name": "Test",
+      "image": "https://sgp1.digitaloceanspaces.com/develop-5-pathway-conicle-co/learn/provider/2023/3/chrome-0392d5b4-7ef0-48a2-b320-b280e479b7ca.jpeg",
+      "image_key": "learn/provider/2023/3/chrome-0392d5b4-7ef0-48a2-b320-b280e479b7ca.jpeg",
+      "is_display": true,
+      "account_id_list": [
+        193,
+        550,
+        647,
+        11,
+        173,
+        568,
+        572
+      ]
+    }
+  },
+  "progress": null,
+  "progress_snap": null,
+  "dependency_list": null,
+  "is_required": true,
+  "datetime_update": "2023-03-09T14:58:06.416289+07:00",
+  "datetime_start": "2023-03-09T14:58:06.416289+07:00",
+  "datetime_expire": null
+}

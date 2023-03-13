@@ -26,6 +26,8 @@
 		A7693F7B29AC7CB4006AF544 /* LPTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693F7A29AC7CB4006AF544 /* LPTheme.swift */; };
 		A7693F7D29AC7CD9006AF544 /* LPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693F7C29AC7CD9006AF544 /* LPConfig.swift */; };
 		A7693F7F29AC7D5A006AF544 /* CoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693F7E29AC7D5A006AF544 /* CoColor.swift */; };
+		A76BCE7129BCE44E005BDB62 /* DateFlagSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BCE7029BCE44E005BDB62 /* DateFlagSwiftUI.swift */; };
+		A76BCE7329BCEBF2005BDB62 /* class_program.json in Resources */ = {isa = PBXBuildFile; fileRef = A76BCE7229BCEBF2005BDB62 /* class_program.json */; };
 		A76C868029A5E9E1004E9A7E /* PathwayPanelSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76C867F29A5E9E1004E9A7E /* PathwayPanelSwiftUI.swift */; };
 		A76C868229A5F04F004E9A7E /* PanelSectionSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76C868129A5F04F004E9A7E /* PanelSectionSwiftUI.swift */; };
 		A76C868429A5F492004E9A7E /* PanelRowViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76C868329A5F492004E9A7E /* PanelRowViewSwiftUI.swift */; };
@@ -142,6 +144,8 @@
 		A7693F7A29AC7CB4006AF544 /* LPTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPTheme.swift; sourceTree = "<group>"; };
 		A7693F7C29AC7CD9006AF544 /* LPConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPConfig.swift; sourceTree = "<group>"; };
 		A7693F7E29AC7D5A006AF544 /* CoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoColor.swift; sourceTree = "<group>"; };
+		A76BCE7029BCE44E005BDB62 /* DateFlagSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFlagSwiftUI.swift; sourceTree = "<group>"; };
+		A76BCE7229BCEBF2005BDB62 /* class_program.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = class_program.json; sourceTree = "<group>"; };
 		A76C867F29A5E9E1004E9A7E /* PathwayPanelSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathwayPanelSwiftUI.swift; sourceTree = "<group>"; };
 		A76C868129A5F04F004E9A7E /* PanelSectionSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelSectionSwiftUI.swift; sourceTree = "<group>"; };
 		A76C868329A5F492004E9A7E /* PanelRowViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelRowViewSwiftUI.swift; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 				A76E845229BA1BDF00F4DED1 /* pathway_section_list.json */,
 				A7481D1929BB183600A6B990 /* pathway_page.json */,
 				A75C703929A8AE5F00A91534 /* pathway_list.json */,
+				A76BCE7229BCEBF2005BDB62 /* class_program.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				A7E1EC3C29B89F060005067E /* ItemListSwiftUI.swift */,
+				A76BCE7029BCE44E005BDB62 /* DateFlagSwiftUI.swift */,
 				A76E843029B9976C00F4DED1 /* IconTitleSwiftUI.swift */,
 				A7E1EC3F29B89F370005067E /* PathwayItemSwiftUI.swift */,
 				A7E1EC4129B8A4410005067E /* PathwayItemCollectionViewCell.swift */,
@@ -602,6 +608,7 @@
 				A7D2B4672979349B00843B84 /* Preview Assets.xcassets in Resources */,
 				A76C869D29A6086D004E9A7E /* db_heaventrounded_bd.ttf in Resources */,
 				A7481D1A29BB183600A6B990 /* pathway_page.json in Resources */,
+				A76BCE7329BCEBF2005BDB62 /* class_program.json in Resources */,
 				A76E844B29BA06D900F4DED1 /* AllFeedItemV5CollectionViewCell.xib in Resources */,
 				A76E844F29BA0ED200F4DED1 /* home_playlist.json in Resources */,
 				A76C86A029A6086D004E9A7E /* db_heaventrounded_bd_it.ttf in Resources */,
@@ -701,6 +708,7 @@
 				A7D2FDF2297FA04A004F1949 /* LoginView.swift in Sources */,
 				A7D2B4AB2979355200843B84 /* ColorHelper.swift in Sources */,
 				A76E844929BA06B100F4DED1 /* AllFeedItemV5CollectionViewCell.swift in Sources */,
+				A76BCE7129BCE44E005BDB62 /* DateFlagSwiftUI.swift in Sources */,
 				A76C86AC29A61443004E9A7E /* SegmentButtonSwiftUI.swift in Sources */,
 				A73ED984299F5AF60037212B /* SuggestionView.swift in Sources */,
 				A7E1EC3D29B89F060005067E /* ItemListSwiftUI.swift in Sources */,

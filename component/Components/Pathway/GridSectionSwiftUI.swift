@@ -9,7 +9,6 @@ import SwiftUI
 
 struct GridSectionSwiftUI: View {
     @State var section: SectionSLPResult = PathwayMock.section
-    
     let mainColor: Color = PathwayStyle.mainColor.color
     
     var body: some View {
@@ -70,7 +69,7 @@ struct GridSectionSwiftUI: View {
 
 struct GridSectionSwiftUI_Previews: PreviewProvider {
     static var previews: some View {
-        GridSectionSwiftUI()
+        GridSectionSwiftUI(section: PathwayMock.section)
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }

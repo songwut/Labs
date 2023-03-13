@@ -8,19 +8,15 @@
 import SwiftUI
 
 struct PathwayItemSwiftUI: View {
-    @State var item = PathwayMock.pathwayDetail
-    //@State var item: LearnObjectResult
+    @State var item: LearningPathResult = PathwayMock.pathwayDetail
+    @State var code: ContentCode = .pathway
     
-    private var code: ContentCode {
-        item.code
-    }
-    
-    private var category: CategoryResult? {
+    var category: CategoryResult? {
         item.category
     }
     
-    private var classProgram: String?
-    private var point: Int?
+    var classProgram: String?
+    var point: Int?
     
     var body: some View {
 
@@ -47,7 +43,7 @@ struct PathwayItemSwiftUI: View {
                         ImageView(url: item.image,
                                   mode: .fill,
                                   placeholder: UIImage(named: "pathway_cover")!)
-                            .background(Color.gray)
+                            .background(Color.white)
                             .clipShape(RoundedRectangle(cornerRadius: 16))
                             .frame(height: coverHeight(width: geometry.size.width))
                         
@@ -68,8 +64,10 @@ struct PathwayItemSwiftUI: View {
     
     var contentDetailView: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Spacer(minLength: 16)
-            // Date
+            EmptyView()
+                .frame(height: 16)
+            
+            //date
             Text(item.getDateText())
                 .foregroundColor(.white)
                 .padding(.horizontal, 8)
@@ -77,26 +75,29 @@ struct PathwayItemSwiftUI: View {
                 .background(Color.semantic(.orange))
                 .clipShape(Capsule())
                 .font(.font(12, .medium))
-                
             
-            // Title
+            //title
             Text(item.name)
                 .lineLimit(1)
                 .foregroundColor(.black)
-                .font(.system(size: 16, weight: .semibold))
+                .font(.font(14, .bold))
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            // Price
+            //price
             if item.price != nil {
                 priceView
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             
+            Spacer()
+            
+            //provider
             providerView
             .frame(maxWidth: .infinity, alignment: .leading)
             
+            //type icon , category
             HStack {
-                IconTitleSwiftUI(icon: code.icon() ?? UIImage(), title: code.name())
+                IconTitleSwiftUI(icon: code.icon(), title: code.name().localized())
                 Text("・")
                     .foregroundColor(.neutral(.cool))
                 if let category = category {
@@ -104,22 +105,26 @@ struct PathwayItemSwiftUI: View {
                         .font(.font(12, .regular))
                         .foregroundColor(.neutral(.cool, .shade900))
                 }
-                
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
+            //material, section
             HStack {
-                IconTitleSwiftUI(icon: UIImage(named: "ic_v2_material")!, title: "content_unit".localized())
-                Text("・")
-                    .foregroundColor(.neutral(.cool))
-                Text("4 sections")
-                    .font(.font(12, .regular))
+                IconTitleSwiftUI(icon: UIImage(named: "ic_v2_material"), title: item.materialCountText)
+                
+                if let sectionCountText = item.sectionCountText {
+                    Text("・")
+                        .foregroundColor(.neutral(.cool))
+                    Text(sectionCountText)
+                        .font(.font(12, .regular))
+                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            IconTitleSwiftUI(icon: UIImage(named: "pointv5")!, title: "\(item.point)")
-            
-            //Spacer()
+            //gamification
+            if let point = item.point {
+                IconTitleSwiftUI(icon: UIImage(named: "pointv5")!, title: "\(point)")
+            }
         }
         .padding()
     }
@@ -132,26 +137,30 @@ struct PathwayItemSwiftUI: View {
                     .font(.font(14, .bold))
             }
             
-            
             if let price = item.price {
                 Text("฿\(price.withCommas())")
                     .foregroundColor(.neutral(.cool))
                     .font(.font(12, .regular))
                     .strikethrough()
             }
-                
         }
     }
     
     var providerView: some View {
         HStack(spacing: 4) {
-            ImageView(url: item.provider?.image ?? "",
-                      mode: .fill)
-                .frame(width: 24, height: 24)
+            ZStack {
+                ImageView(url: item.provider?.image ?? "",
+                          mode: .fill)
+                
                 .border(Color.neutral(.cool, .shade200), width: 1)
-                .cornerRadius(8)
+                
+                RoundedRectangle(cornerRadius: 18)
+                    .stroke(Color.neutral(.cool, .shade200), lineWidth: 1)
+            }
+            .frame(width: 24, height: 24)
+            .clipShape(RoundedRectangle(cornerRadius: 18))
             
-            Text(item.provider?.title ?? "")
+            Text(item.provider?.name ?? "")
                 .foregroundColor(.gray)
                 .font(.system(size: 14, weight: .regular))
         }
@@ -161,7 +170,8 @@ struct PathwayItemSwiftUI: View {
 
 struct PathwayItemSwiftUI_Previews: PreviewProvider {
     static var previews: some View {
-        PathwayItemSwiftUI()
+        let item = PathwayMock.pathwayDetail
+        PathwayItemSwiftUI(item: item, code: item.contentTypeCode)
             .previewLayout(.fixed(width: 335, height: 435))
 
     }

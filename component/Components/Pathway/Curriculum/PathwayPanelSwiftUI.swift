@@ -40,13 +40,8 @@ struct PathwayPanelSwiftUI: View {
                         .font(.font(18, .medium))
                     
                     ForEach(viewModel.pathwaySectionList, id: \SectionSLPResult.uuid) { section in
-                        Section(header: PanelSectionSwiftUI(section: section)) {
-                            ForEach(section.list, id:\LearnObjectResult.id) { item in
-                                PanelRowViewSwiftUI(item: item)
-                                    .background(Color.gray.opacity(0.2))
-                                    .cornerRadius(12)
-                            }
-                        }
+                        
+                        SectionPanelSectionSwiftUI(section: section)
                     }
                 }
                 .padding()
@@ -66,6 +61,25 @@ struct PathwayPanelSwiftUI: View {
             PathwayMenuSwiftUI(selection: $viewModel.selection, items: viewModel.menus)
         }
         
+    }
+}
+
+struct SectionPanelSectionSwiftUI: View {
+    @State var section: SectionSLPResult
+    @State private var isExpanded = true
+    
+    var body: some View {
+        Section(header:
+                    PanelSectionSwiftUI(section: section, isExpanded: $isExpanded)
+        ) {
+            if isExpanded {
+                ForEach(section.list, id:\LearnObjectResult.id) { item in
+                    PanelRowViewSwiftUI(item: item)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(12)
+                }
+            }
+        }
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PanelSectionSwiftUI: View {
     @State var section: SectionSLPResult = PathwayMock.section
-    
+    @Binding var isExpanded: Bool
     let mainColor: Color = PathwayStyle.mainColor.color
     
     var body: some View {
@@ -49,8 +49,11 @@ struct PanelSectionSwiftUI: View {
             
             Button {
                 print("expand section: \(section.name)")
+                withAnimation {
+                    isExpanded.toggle()
+                }
             } label: {
-                Image(systemName: "chevron.up")
+                Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
                     .frame(width: 24, height: 24)
                     .foregroundColor(mainColor)
             }
@@ -61,7 +64,7 @@ struct PanelSectionSwiftUI: View {
 
 struct PanelSectionView_Previews: PreviewProvider {
     static var previews: some View {
-        PanelSectionSwiftUI()
+        PanelSectionSwiftUI(isExpanded: .constant(true))
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }

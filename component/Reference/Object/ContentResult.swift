@@ -44,7 +44,7 @@ class ContentResult: BaseResult {
     var externalCode = ContentCode.none
     var newCode = ""
     var contentTypeId = 0
-    //var contentTypeCode = ContentCode.none
+    var contentTypeCode = ContentCode.none
     //var contentTypeExternalCode = ContentCode.none
     var isDependency = false
     var isMessenger = false // course, event, leanringPath
@@ -288,7 +288,7 @@ class ContentResult: BaseResult {
         isDependency            <- map["is_dependency"]
         isMessenger             <- map["is_messenger"]
         contentTypeId           <- map["content_type.id"]
-        //contentTypeCode         <- map["content_type.code"]
+        contentTypeCode         <- map["content_type.code"]
         //contentTypeExternalCode <- map["content_type.external_code"]
         //code                    <- map["code"]
         externalCode            <- map["content_type.external_code"]

@@ -43,13 +43,6 @@ class PathwayItemCollectionViewCell: UICollectionViewCell {
     }
 }
 
-
-//struct PathwayItemCollectionViewCell_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PathwayItemCollectionViewCell()
-//    }
-//}
-
 //use
 //func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 //    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PathwayItemCell", for: indexPath) as! PathwayItemCollectionViewCell

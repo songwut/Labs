@@ -46,7 +46,7 @@ struct ItemListSwiftUI: View {
                     ForEach(list, id:\LearningPathResult.uuid) { item in
                         let marginBorder: CGFloat = UIDevice.isIPad ? 140 : 40
                         let itemWidth: CGFloat = (geometry.size.width - marginBorder) / CGFloat(columns.count)
-                        PathwayItemSwiftUI()
+                        PathwayItemSwiftUI(item: item, code: item.contentTypeCode)
                             .frame(
                                 width: itemWidth ,
                                 height: (itemWidth * (9 / 16)) + 230

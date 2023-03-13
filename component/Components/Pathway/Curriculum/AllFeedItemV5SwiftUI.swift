@@ -18,33 +18,47 @@ struct AllFeedItemV5SwiftUI: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
-                // Background
                 RoundedRectangle(cornerRadius: 20)
                     .fill(Color.white)
                     .shadow(radius: 3)
                 
-                
                 VStack(alignment: .leading) {
-                    ZStack {
+                    ZStack(alignment: .leading) {
                         ImageView(url: item.image,
                                   mode: .fill,
                                   placeholder: UIImage(named: "pathway_cover")!)
                             .background(Color.gray)
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                             .frame(height: coverHeight(width: geometry.size.width))
-                        
-                        
                     }
                     .frame(height: coverHeight(width: geometry.size.width))
                     
                     contentDetailView
                 }
+                
+                if let dateFlagText = item.dateFlagText {
+                    DateFlagSwiftUI(dateString: dateFlagText)
+                        .frame(width: 46, height: 47, alignment: .center)
+                        .padding([.leading], 12)
+                        .padding([.top], -80)
+                        .background(Color.black)
+                }
+                
             }
         }
     }
     
     func coverHeight(width: CGFloat) -> CGFloat {
         return width * 9 / 16
+    }
+    
+    var dateFlagView: some View {
+        VStack {
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.white)
+                .shadow(radius: 3)
+        }
+        
     }
     
     var contentDetailView: some View {
@@ -147,7 +161,8 @@ struct AllFeedItemV5SwiftUI: View {
 
 struct AllFeedItemV5SwiftUI_Previews: PreviewProvider {
     static var previews: some View {
-        AllFeedItemV5SwiftUI(item: PathwayMock.learnObject, code: .course)
+        let item = PathwayMock.classProgram
+        AllFeedItemV5SwiftUI(item: item, code: item.contentTypeCode)
             .previewLayout(.fixed(width: 266, height: 384))
     }
 }

@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct IconTitleSwiftUI: View {
-    @State var icon: UIImage = UIImage()
+    @State var icon: UIImage?
     @State var title: String
     
     var body: some View {
         VStack {
             HStack(spacing: 4) {
-                Image(uiImage: icon)
+                Image(uiImage: icon ?? UIImage())
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 24, height: 24)

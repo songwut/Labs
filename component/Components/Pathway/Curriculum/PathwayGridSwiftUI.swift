@@ -114,7 +114,6 @@ struct PathwayGridSwiftUI: View {
                 
                 PathwayHeaderViewRep(frame: frame, viewModel: viewModel)
                     .frame(height: viewModel.topViewHeight)
-                //PathViewControllerRep(pathwayVM: viewModel)
                 
             })
             .background(Color.clear)
